@@ -5,7 +5,7 @@
 
 
 /*
-    Find 3 nations with the most active customers
+   Query to  Find 3 nations with the most active customers
 */
 
 {{ config(materialized='table') }}
