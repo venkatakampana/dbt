@@ -15,6 +15,7 @@ RUN apt-get update -y && \
 # Install DBT
 RUN pip install -U pip
 RUN pip install dbt-core dbt-postgres dbt-redshift dbt-snowflake dbt-bigquery
+RUN dbt deps
 
 WORKDIR /dbt-project
 
